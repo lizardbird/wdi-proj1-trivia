@@ -51,6 +51,10 @@ h1 {
   margin: 10px;
 }
 
+.blank {
+  display: none;
+}
+
 .right {
   background-color: #ffe066;
 }

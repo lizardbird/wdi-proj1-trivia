@@ -1,72 +1,28 @@
-var content = [
-  {
-    question: 'Question 1',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 2',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 3',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 4',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 5',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 6',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 7',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 8',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 9',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
-    }
-  },
-  {
-    question: 'Question 10',
-    answers: {
-      right: 'Answer 1',
-      wrongAnswers: ['Answer 2', 'Answer 3','Answer 4']
+// Randomize content order
+let randomContent = []
+
+var createRandomList = function (list) {
+  while (randomContent.length < 10) {
+    var randomItem = list[Math.floor(Math.random() * list.length)]
+    if (!(randomContent.includes(randomItem))) {
+      randomContent.push(randomItem)
     }
   }
-]
+}
+createRandomList(content)
+
+// Prepare Q & As for display
+let currentQ = 0
+
+var formatForDisplay = function () {
+  let q = randomContent[currentQ].question
+  let {right, wrong} = randomContent[currentQ].answers
+  // Thanks John for your help with concat!
+  let randAns = wrong.concat(right).sort(() => {
+    return 0.5 - Math.random
+  })
+  return {
+    question: q,
+    answers: randAns
+  }
+}
