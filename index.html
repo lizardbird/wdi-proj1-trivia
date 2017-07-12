@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BizTriv!</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="game-model.js" charset="utf-8"></script>
+    <script src="game-view.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section id = "game-info">
+      <h1>Who wants to be an entrepreneur?</h1>
+      <p>The educational trivia game for aspiring business owners. Master your skills in strategy, finance, and marketing on-the-go with this interactive mobile game.</p>
+      <button type="button" id="play-button">Start Game</button>
+      <section id = "game-box">
+        <div class = "question"> Question </div>
+        <section class = "answers">
+          <div class = "answer right"> Answer </div>
+          <div class = "answer wrong"> Answer </div>
+          <div class = "answer"> Answer </div>
+          <div class = "answer"> Answer </div>
+        </section>
+        <button type="button" id="next-question">Skip This Question</button>
+      </section>
+    </section>
+  </body>
+</html>
