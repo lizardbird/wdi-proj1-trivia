@@ -15,14 +15,21 @@ createRandomList(content)
 let currentQ = 0
 
 var formatForDisplay = function () {
-  let q = randomContent[currentQ].question
-  let {right, wrong} = randomContent[currentQ].answers
-  // Thanks John for your help with concat!
-  let randAns = wrong.concat(right).sort(() => {
-    return 0.5 - Math.random
-  })
-  return {
-    question: q,
-    answers: randAns
+  if (currentQ < randomContent.length) {
+    let q = randomContent[currentQ].question
+    let exp = randomContent[currentQ].explain
+    let {right, wrong} = randomContent[currentQ].answers
+    // Thanks John for your help with concat!
+    let randAns = wrong.concat(right).sort(() => {
+      return 0.5 - Math.random()
+    })
+    return {
+      question: q,
+      answers: randAns,
+      explain: exp
+    }
+
+  } else {
+    alert('You have reached the end of the list of questions')
   }
 }

@@ -11,21 +11,28 @@
     <script src="game-view.js" charset="utf-8"></script>
   </head>
   <body>
-    <h1>Who wants to be an entrepreneur?</h1>
-    <section id = "game-info">
-      <p>The educational trivia game for aspiring business owners. Master your skills in strategy, finance, and marketing on-the-go with this interactive mobile game.</p>
-      <button type="button" id="start-button">Start Game</button>
-    </section>
-      <section id = "game-box" class ="blank">
-        <div id ="question" class = "question"> Question </div>
-        <section class = "answers">
-          <div class = "answer"> Answer </div>
-          <div class = "answer"> Answer </div>
-          <div class = "answer"> Answer </div>
-          <div class = "answer"> Answer </div>
-        </section>
-        <button type="button" id="next-question">Next Question</button>
+    <section>
+      <h1>Who wants to be an entrepreneur?</h1>
       </section>
-
+      <section id = "game-info">
+        <p>The educational trivia game for aspiring business owners. Master your skills in strategy, finance, and marketing on-the-go with this interactive mobile game.</p>
+        <button type="button" id="start-button">Start Game</button>
+      </section>
+        <section id = "game-box" class ="blank">
+          <div id = "score-box">
+            <p>Timer:</p>
+              <p class = "timer"></p>
+            <p>Score:</p>
+              <p class = "score"></p>
+          </div>
+          <div id ="main-display" class = "question"> Question </div>
+          <section class = "answers">
+            <button class = "answer"> Answer </button>
+            <button class = "answer"> Answer </button>
+            <button class = "answer"> Answer </button>
+            <button class = "answer"> Answer </button>
+          </section>
+          <button type="button" id="next-question">Next Question</button>
+        </section>
   </body>
 </html>
