@@ -69,7 +69,7 @@ var content = [
       right: 'How much does our product cost?',
       wrong: ['What do we provide?', 'Who are our customers?', 'What is important to us?']
     },
-    explain: 'As an explanation of why a company exists, and how it aims to serve its stakeholders, a mission statement should answer<br/><br/> a) What do we provide?<br/> b) Who are our customers?<br/> c) What is the benefit?<br/> d) What is important to us?<br/><br/> Tesla\'s mission statement, for example, is: To accelerate the advent of sustainable transport by bringing compelling mass market electric cars to market as soon as possible.'
+    explain: 'A mission statement is an explanation of why a company exists, and how it aims to serve its stakeholders. It should answer:<br/><br/> a) What do we provide?<br/> b) Who are our customers?<br/> c) What is the benefit?<br/> d) What is important to us?<br/><br/> Tesla\'s mission statement, for example, is: To accelerate the advent of sustainable transport by bringing compelling mass market electric cars to market as soon as possible.'
   },
   {
     question: 'What does a vision statement describe?',

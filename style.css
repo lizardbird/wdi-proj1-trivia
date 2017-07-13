@@ -7,7 +7,7 @@ html {
   color: #fff;
   background-color: #50514f;
   font-family: 'Arvo', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 }
 .dark {
   color: #fff;
@@ -90,6 +90,10 @@ h1 {
 button {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
+  margin: 8px;
+}
+
+p {
   margin: 10px;
 }
 /*

@@ -9,9 +9,9 @@ $(document).ready(function () {
   var ansBtn = $('.answer')
   var score = $('.score')
   var timer = $('#timer')
-  var small = $('.small')
-  var medium = $('.medium')
-  var large = $('.large')
+  // var small = $('.small')
+  // var medium = $('.medium')
+  // var large = $('.large')
   var lightBtn = $('#light')
   var darkBtn = $('#dark')
   var ans
@@ -59,9 +59,9 @@ $(document).ready(function () {
   })
 
 // When a user clicks on the small, medium, or large A, change the font size of the page
-  $(small).on('click', $('body').css('font-size', '14px'))
-  medium.on('click', $('body').css('font-size', '18px'))
-  large.on('click', $('body').css('font-size', '22px'))
+  // $(small).on('click', $('body').css('font-size', '14px'))
+  // medium.on('click', $('body').css('font-size', '18px'))
+  // large.on('click', $('body').css('font-size', '22px'))
 
   // FUNCTIONS
   // Function to advance to next question and answer set
