@@ -28,8 +28,5 @@ var formatForDisplay = function () {
       answers: randAns,
       explain: exp
     }
-
-  } else {
-    alert('You have reached the end of the list of questions')
   }
 }

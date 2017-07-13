@@ -11,19 +11,18 @@
     <script src="game-view.js" charset="utf-8"></script>
   </head>
   <body>
+    <!-- <span class= "small  currentSize">A</span><span class= "medium">A</span><span class= "large">A</span> -->
     <section>
       <h1>Who wants to be an entrepreneur?</h1>
-      </section>
+    </section>
       <section id = "game-info">
         <p>The educational trivia game for aspiring business owners. Master your skills in strategy, finance, and marketing on-the-go with this interactive mobile game.</p>
-        <button type="button" id="start-button">Start Game</button>
+        <button type="button" id="start-button">START</button>
       </section>
         <section id = "game-box" class ="blank">
           <div id = "score-box">
-            <p>Timer:</p>
-              <p class = "timer"></p>
-            <p>Score:</p>
-              <p class = "score"></p>
+            <p id = "timer">Timer: 20 seconds</p>
+            <p class = "score">Score: 0/0</p>
           </div>
           <div id ="main-display" class = "question"> Question </div>
           <section class = "answers">
@@ -32,7 +31,10 @@
             <button class = "answer"> Answer </button>
             <button class = "answer"> Answer </button>
           </section>
-          <button type="button" id="next-question">Next Question</button>
+          <button type="button" id="next-question">NEXT</button>
         </section>
+    <section class = "end-of-game blank">
+        <p>You've reached the end of the game! <br/> Final <span class = "score">Score: 0/0</span></p>
+    </section>
   </body>
 </html>

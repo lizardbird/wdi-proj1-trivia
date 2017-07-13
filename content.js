@@ -1,81 +1,82 @@
 var content = [
   {
-    question: 'What is a 1',
+    question: 'Which term describes a plan of action designed to achieve a specific goal?',
     answers: {
-      right: 'Q1 - Answer 1',
-      wrong: ['Q1 - Answer 2', 'Q1 - Answer 3', 'Q1 - Answer 4']
+      right: 'strategy',
+      wrong: ['business model', 'marketing', 'leadership message']
     },
-    explain: 'explanation'
+    explain: 'The answer is strategy. A good strategy defines a clear vision for your desired outcome, and identifies the steps needed to acheive that outcome.'
   },
   {
-    question: 'What is a 2',
+    question: 'Select the word that descibes the systematic and comprehensive recording of financial transactions pertaining to a business.',
     answers: {
-      right: 'Q2 - Answer 1',
-      wrong: ['Q2 - Answer 2', 'Q2 - Answer 3', 'Q2 - Answer 4']
+      right: 'accounting',
+      wrong: ['economics', 'notetaking', 'investing']
     },
-    explain: 'explanation'
+    explain: 'The answer is accounting. Accounting also includes the process of summarizing, analyzing, and reporting your transactions to oversight agencies and the IRS for tax collection.'
   },
   {
-    question: 'What is a 3',
+    question: 'Which of the following are NOT one of the 4 P\'s of marketing?',
     answers: {
-      right: 'Q3 - Answer 1',
-      wrong: ['Q3 - Answer 2', 'Q3 - Answer 3', 'Q3 - Answer 4']
+      right: 'personality',
+      wrong: ['price', 'product', 'place']
     },
-    explain: 'explanation'
+    explain: 'The 4 P\'s of marketing include: product, price, place, and promotional strategy.'
   },
   {
-    question: 'What is a 4',
+    question: '____ is the capacity to influence others to acheive common goals.',
     answers: {
-      right: 'Q4 - Answer 1',
-      wrong: ['Q4 - Answer 2', 'Q4 - Answer 3', 'Q4 - Answer 4']
+      right: 'leadership',
+      wrong: ['management', 'scheduling', 'public speaking']
     },
-    explain: 'explanation'
+    explain: 'This one was a little tricky. Leadership is the capacity to influence others, while management is assigned leadership to produce order and consistency.'
   },
   {
-    question: 'What is a 5',
+    question: 'Which of these is a part of the risk management process?',
     answers: {
-      right: 'Q5 - Answer 1',
-      wrong: ['Q5 - Answer 2', 'Q5 - Answer 3', 'Q5 - Answer 4']
+      right: 'identification',
+      wrong: ['panicking', 'assigning blame', 'procrastinating']
     },
-    explain: 'explanation'
+    explain: 'Risk management is a process to identify, assess, and mitigate or avoid risks.'
   },
   {
-    question: 'What is a 6',
+    question: 'What is it called when one firm, usually larger, purchases some or all of another firm\'s assets?',
     answers: {
-      right: 'Q6  - Answer 1',
-      wrong: ['Q6 - Answer 2', 'Q6 - Answer 3', 'Q6 - Answer 4']
+      right: 'acquisition',
+      wrong: ['merger', 'bankruptcy', 'invasion']
     },
-    explain: 'explanation'
+    explain: 'When one company purchases another, this is an acqusition. This is not always a bad thing - some are friendly, while others are perceived as hostile takeovers.'
   },
   {
-    question: 'What is a 7',
+    question: 'Which of these is an example of offline media?',
     answers: {
-      right: 'Q7 - Answer 1',
-      wrong: ['Q7 - Answer 2', 'Q7 - Answer 3', 'Q7 - Answer 4']
+      right: 'television',
+      wrong: ['website', 'email', 'mobile app']
     },
-    explain: 'explanation'
+    explain: 'TV, radio, print magazines, newspapers, billboards, etc. are all considered offline media.'
   },
   {
-    question: 'What is a 8',
+    question: 'Which of these is the correct order of a buyer\'s journey?',
     answers: {
-      right: 'Q8 - Answer 1',
-      wrong: ['Q8 - Answer 2', 'Q8 - Answer 3', 'Q8 - Answer 4']
+      right: 'awareness > interest > consideration > evaluation > purchase',
+      wrong: ['consideration > awareness > interest > purchase > evaluation', 'interest > purchase >consideration > awareness > evaluation', 'evaluation > consideration > awareness > interest > purchase']
     },
-    explain: 'explanation'
+    explain: 'Marketers should tailor activities to each stage of the buyer\'s journey, i.e. the process consumers go through before they buy: <br/><br/> awareness > interest > consideration > evaluation > purchase'
   },
   {
-    question: 'What is a 9',
+    question: 'An effective mission statement answers 4 key questions about a company. Which of the following is NOT one of these key questions?',
     answers: {
-      right: 'Q9 - Answer 1',
-      wrong: ['Q9 - Answer 2', 'Q9 - Answer 3', 'Q9 - Answer 4']
+      right: 'How much does our product cost?',
+      wrong: ['What do we provide?', 'Who are our customers?', 'What is important to us?']
     },
-    explain: 'explanation'
+    explain: 'As an explanation of why a company exists, and how it aims to serve its stakeholders, a mission statement should answer<br/><br/> a) What do we provide?<br/> b) Who are our customers?<br/> c) What is the benefit?<br/> d) What is important to us?<br/><br/> Tesla\'s mission statement, for example, is: To accelerate the advent of sustainable transport by bringing compelling mass market electric cars to market as soon as possible.'
   },
   {
-    question: 'What is a 10',
+    question: 'What does a vision statement describe?',
     answers: {
-      right: 'Q10 - Answer 1',
-      wrong: ['Q10 - Answer 2', 'Q10 - Answer 3', 'Q10 - Answer 4']
-    }
+      right: 'a big picture of where the company wants to go',
+      wrong: ['the ideal outcomes for customers', 'the steps needed to achieve company goals', 'company values and ethics']
+    },
+    explain: 'The vision statement should be future-oriented and define what the company aims to become. For example, Google\'s vision statement is: “To provide access to the worlds information in one click.""'
   }
 ]
