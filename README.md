@@ -15,17 +15,11 @@ Repo containing contents for GA WDI Project 1 - Trivia Game
     <li>No matter what the user clicks, display the right answer</li>
   </ul>
   <p>From there, I wrote 3 plans: <strong>Bronze, Silver, and Gold,</strong> in order to focus on getting the game mechanics to work first, and then begin adding features and styling if I had time.</p>
-  <div class = "devimgs">
-      <img src="images/devimg2.jpg" alt="devimg1" class="devimg rotate">
-      <img src="images/devimg3.jpg" alt="devimg1" class="devimg rotate">
-      <img src="images/devimg1.jpg" alt="devimg1" class="devimg rotate">
-  </div>
+
   <h2>Design &amp; Development</h2>
   <p>I used a <a href="trello.com/b/1AM2yeDM/ga-wdi-project-1-trivia-game">Trello Board</a> to track my development process, including moving each element from initial design through assigning event listeners to quality testing each piece and ultimately launching the site on GitHub Pages.</p>
   <p>I launched and tested the original game, but I was not loving the boring business spin on the project, and my styling was seriously lacking.</p>
-  <div class = "devimgs">
-      <img src="images/game-prototype.png" alt="prototype" class="devimg">
-  </div>
+  
   <p>After some reflection, I decided to pivot and change the content to be about one of my favorite animals, Otters, and change to a fun, whimsical theme filled with puns.</p>
   <p>I leveraged the sushi background image from the <a href="zendesk.com">Zendesk Website</a>, found my Otter logo image on <a href="https://dribbble.com/shots/1202893-Giant-Otter">Dribble</a>, and used <a href="https://coolors.co/">Coolors</a> to generate a complimentary color set. With just a couple hours of CSS editing, the game arrived in it's current state, where I am testing users on Otterly Awesome Facts.</p>
   <h2>Lessons Learned</h2>
