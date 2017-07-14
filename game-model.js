@@ -9,7 +9,7 @@ var createRandomList = function (list) {
     }
   }
 }
-createRandomList(content)
+createRandomList(otterContent)
 
 // Prepare Q & As for display
 let currentQ = 0

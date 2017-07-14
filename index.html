@@ -2,42 +2,56 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BizTriv!</title>
+    <title>Wotter You Know?!</title>
     <link href="https://fonts.googleapis.com/css?family=Arvo|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="content.js" charset="utf-8"></script>
+    <script src="otter-content.js" charset="utf-8"></script>
     <script src="game-model.js" charset="utf-8"></script>
     <script src="game-view.js" charset="utf-8"></script>
   </head>
-  <body>
-    <!-- <span class= "small  currentSize">A</span><span class= "medium">A</span><span class= "large">A</span> -->
-    <section>
-      <h1>Who wants to be an entrepreneur?</h1>
-    </section>
-      <section id = "game-info">
-        <p>The educational trivia game for aspiring business owners. Test your skills in strategy, finance, and marketing on-the-go with this interactive mobile game.</p>
-        <button type="button" id="start-button">START</button>
-        <p>Pick a theme:</p>
-        <p><button type="button" id="light" class="light">LIGHT</button> or <button type="button" id="dark" class="dark">DARK</button></p>
-      </section>
-        <section id = "game-box" class ="blank">
-          <div id = "score-box">
-            <p id = "timer">Timer: 20 seconds</p>
-            <p class = "score">Score: 0/0</p>
-          </div>
-          <div id ="main-display" class = "question"> Question </div>
-          <section class = "answers">
-            <button class = "answer"> Answer </button>
-            <button class = "answer"> Answer </button>
-            <button class = "answer"> Answer </button>
-            <button class = "answer"> Answer </button>
-          </section>
-          <button type="button" id="next-question">NEXT</button>
+  <body class = "light">
+  <div class = "wrap">
+    <main>
+      <nav class="nav-bar">
+      	<a href="index.html">Instructions</a>
+      	<a href="topics.html">Other Topics</a>
+      	<a href="behindgame.html">Behind the Game</a>
+        <span class = "company-name">Wotter You Know?</span>
+        <img src="images/otter.png" alt="otter" class="otter">
+      </nav>
+      <!-- <span class= "small  currentSize">A</span><span class= "medium">A</span><span class= "large">A</span> -->
+      <div class = "container">
+        <h1>Otterly Awesome Facts</h1>
+
+        <section id = "game-info">
+          <p>Welcome to <span class ="company-inline"> Wotter You Know?</span> - test your knowledge on-the-go with this interactive mobile game about the cutest aquatic animal alive! </p><p>In this introductory topic, test your knowledge of Otterly Awesome Facts by answering a few trivia questions. <br><br>Good luck!</p>
+          <button type="button" id="start-button">START</button>
+          <p>Pick a theme:</p>
+          <p><button type="button" id="light" class="light">LIGHT</button> or <button type="button" id="dark" class="dark">DARK</button></p>
         </section>
-    <section class = "end-of-game blank">
-        <p>You've reached the end of the game! <br/> Final <span class = "score">Score: 0/0</span></p>
-        <button type="button" id="end-button">START AGAIN</button>
+          <section id = "game-box" class ="blank">
+            <div id = "score-box">
+              <p id = "timer">Timer:<br> 15 seconds</p>
+              <p class = "score">Score:<br> 0/0</p>
+            </div>
+            <div id ="main-display" class = "question"> Question </div>
+            <section class = "answers">
+              <button class = "answer"> Answer </button>
+              <button class = "answer"> Answer </button>
+              <button class = "answer"> Answer </button>
+              <button class = "answer"> Answer </button>
+            </section>
+            <button type="button" id="next-question">NEXT</button>
+          </section>
+      <section class = "end-of-game blank">
+          <p>You've reached the end of the game! <br/><br/> Final <span class = "score">Score: 0/0</span></p>
+          <button type="button" id="end-button">START AGAIN</button>
+      </section>
+      </div>
     </section>
+    </main>
+  </div>
+  <footer><span class = "message">Created with <span class = "hearts">&hearts;</span> by <span class="name">Liz Jewell</span></span></footer>
   </body>
 </html>

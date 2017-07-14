@@ -8,10 +8,7 @@ $(document).ready(function () {
   var gameInfo = $('#game-info')
   var ansBtn = $('.answer')
   var score = $('.score')
-  var timer = $('#timer')
-  // var small = $('.small')
-  // var medium = $('.medium')
-  // var large = $('.large')
+  var timerInfo = $('#timer')
   var lightBtn = $('#light')
   var darkBtn = $('#dark')
   var ans
@@ -29,12 +26,12 @@ $(document).ready(function () {
   })
   // Allow user to choose light or dark theme
   lightBtn.on('click', function () {
-    $('html').addClass('light')
-    $('html').removeClass('dark')
+    $('body').addClass('light')
+    $('body').removeClass('dark')
   })
   darkBtn.on('click', function () {
-    $('html').addClass('dark')
-    $('html').removeClass('light')
+    $('body').addClass('dark')
+    $('body').removeClass('light')
   })
 
 // On Next Btn, advance to next question and answer set
@@ -53,9 +50,10 @@ $(document).ready(function () {
     checkIsRight(this, currentQ)
     hasClicked = true
   })
-// When answer button clicked, identify as selected
+
+// When you reach the end, allow user to start again
   endBtn.on('click', function () {
-    window.location.reload();
+    window.location.reload()
   })
 
 // When a user clicks on the small, medium, or large A, change the font size of the page
@@ -80,47 +78,60 @@ $(document).ready(function () {
 
 // Function to check if answer is right
   var checkIsRight = function (amIRight, current) {
-    if (hasClicked === false) {
-      if ($(amIRight).text() === randomContent[current].answers.right) {
-        $(amIRight).addClass('right')
-        mainDisplay.html(`CORRECT!<br/><br/> ${randomContent[current].explain}`)
-        mainDisplay.removeClass('wrong')
-        mainDisplay.addClass('right')
-        rightCounter++
+    if (count !== 0) {
+      if (hasClicked === false) {
+        if ($(amIRight).text() === randomContent[current].answers.right) {
+          $(amIRight).addClass('right')
+          mainDisplay.html(`CORRECT!<br/><br/> ${randomContent[current].explain}`)
+          mainDisplay.removeClass('wrong')
+          mainDisplay.addClass('right')
+          rightCounter++
+        } else {
+          $(amIRight).addClass('wrong')
+          mainDisplay.html(`Sorry, no!<br/><br/> ${randomContent[current].explain}`)
+          displayRight(current)
+        }
+        score.html(`Score: <br> ${rightCounter}/${totalCounter}`)
       } else {
-        $(amIRight).addClass('wrong')
-        mainDisplay.html(`Sorry, no!<br/><br/> ${randomContent[current].explain}`)
-        mainDisplay.addClass('wrong')
-        let correct = $('.answer').filter(function () {
-          return $(this).text() === randomContent[current].answers.right
-        })
-        $(correct).addClass('right')
+        alert('Nice try, but you have already answered.')
       }
-      score.text(`Score: ${rightCounter}/${totalCounter}`)
     } else {
-      alert('Nice try, but you have already answered.')
     }
   }
 // Timer function
 
-  var count = 21
+  var count = 15
   var counter // 1000 will  run it every 1 second
-  var timerFun = function () {
+  var timer = function () {
     if (hasClicked === false) {
-    count = count - 1
+      count = count - 1
       // console.log(count);
-    timer.text(`Timer: ${count} seconds`)
-    if (count === 0) {
-      clearInterval(counter)
-      return
+      timerInfo.html(`Timer:<br> ${count} seconds`)
+      if (count === 0) {
+        revealRight(currentQ)
+        clearInterval(counter)
+        return
+      }
     }
-  }
   }
 
   var resetTimer = function () {
     clearInterval(counter)
-    count = 21
-    counter = setInterval(timerFun, 1000)
+    count = 15
+    counter = setInterval(timer, 1000)
+  }
+
+  var revealRight = function (current) {
+    mainDisplay.html(`You ran out of time!<br/><br/> ${randomContent[current].explain}`)
+    displayRight(current)
+  }
+
+  var displayRight = function (current) {
+    mainDisplay.addClass('wrong')
+    let correct = $('.answer').filter(function () {
+      return $(this).text() === randomContent[current].answers.right
+    })
+    $(correct).addClass('right')
   }
 
 // Do not delete these braces fool

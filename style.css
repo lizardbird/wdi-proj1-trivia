@@ -1,32 +1,121 @@
 html {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  background-color: #50514f;
-  font-family: 'Arvo', sans-serif;
-  font-size: 20px;
+  position: relative;
+  min-height: 100%;
 }
+
+body {
+  width: 100%
+  background-color: #dedede;
+  color: #fff;
+  margin: 0px 0px 25%;
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-position:  left 0px bottom 80px;
+  background-attachment: scroll;
+  background-size: contain;
+  background-image: url('images/sushi-and-tables.svg');
+}
+
+.light {
+  background-color: #dedede;
+  color: #50514f;
+}
+
 .dark {
   color: #fff;
   background-color: #50514f;
 }
 
-.light {
-  color: #50514f;
-  background-color: #fff;
+.light, .dark, .wrap {
+  font-family: 'Arvo', sans-serif;
+  font-size: 20px;
+  padding: 0 auto;
 }
 
-body {
-  width: 90%;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
+.nav-bar {
+	background-color: #EB4962;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+@media all and (max-width: 500px) {
+  .nav-bar {
+    /* On small screens, no longer using row direction but column */
+    flex-direction: column;
+    flex-flow: column wrap;
+    font-size: 14px;
+  }
+  .company-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .otter {
+    align-self: center;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0px 0px 40%;
+  }
+  .devimg {
+    height: 75px;
+    transform: rotate(90deg);
+    border: 1px solid black;
+  }
+}
+
+.otter {
+  align-self: center;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.company-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+.company-name, nav a {
+	color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav a:hover {
+	background-color: #30AABC;
+}
+
+.container {
+  width: 70%;
+  align-self: center;
+}
+.container p{
+  width: 60%;
+  align-self: center;
+}
+.container a{
+  text-decoration: none;
+  color: #eb4962;
+  font-weight: bold;
+}
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-family: 'Arvo', serif;
 }
 
@@ -37,14 +126,20 @@ h1 {
   padding: 0;
 }
 
-#main-display {
-    width: 60%;
+.company-inline {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 0;
+  display: inline;
 }
+
 .question {
-  background-color: #247BA0;
-  color: #fff;
+  background-color: #07BEB8;
   padding: 40px;
   margin: 10px;
+  color: #fff;
+  width: 80%
 }
 
 .answers {
@@ -52,17 +147,18 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  width: 70%;
+  width: 80%;
+  color: #fff;
 }
 
 .answer {
-  background-color: #70c1b3;
-  color: #000;
+  background-color: #074F57;
   padding: 10px;
-  width: inherit;
+  width: 100%;
   margin: 10px;
   border: none;
   font-family: 'Arvo', serif;
+  color: #fff;
 }
 
 .blank {
@@ -70,21 +166,19 @@ h1 {
 }
 
 .right {
-  background-color: #ffe066;
-  color: #000000;
+  background-color: #30aabc;
 }
 
 .wrong {
-  background-color: #f25f5c;
-  color: #000000;
+  background-color: #eb4962;
 }
 
 #score-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
   font-size:1.2em;
+  width: 100%;
 }
 
 button {
@@ -95,6 +189,61 @@ button {
 
 p {
   margin: 10px;
+}
+
+.devprocess {
+  text-align: left;
+  width: 100%;
+}
+
+.devimgs {
+  margin: 40px;
+  padding: 10px;
+  position: relative;
+}
+
+ul {
+  text-align: left;
+}
+.devimg {
+  height: 200px;
+  border: 1px solid black;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+
+strong {
+  font-style: italic;
+}
+
+footer {
+	text-transform: uppercase;
+	background-color: #03363D;
+  height: 60px;
+  padding-top: 20px;
+  width: 100%;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+	font-family: Raleway, sans-serif;
+	text-align: right;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+}
+
+.message {
+  margin: 20px;
+}
+
+.name {
+	color: #30AABC;
+}
+
+.hearts {
+  color: #EB4962;
 }
 /*
 .small, .medium, .large {
