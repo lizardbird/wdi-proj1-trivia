@@ -80,3 +80,5 @@ var otterContent = [
     explain: 'Otters are found on every single continent in the world except for Australia and Antarctica. They enjoy the freshwater but they are also known to live in the saltwater of the oceans as well.'
   }
 ]
+
+// Great job separating out your data into its own file
