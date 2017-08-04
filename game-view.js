@@ -55,6 +55,8 @@ $(document).ready(function () {
   endBtn.on('click', function () {
     window.location.reload()
   })
+  // Not bad use of a refresh to restart the game, but better practice would be to
+  // set up a function that resets the game's variables / display
 
 // When a user clicks on the small, medium, or large A, change the font size of the page
   // $(small).on('click', $('body').css('font-size', '14px'))
@@ -85,6 +87,7 @@ $(document).ready(function () {
           mainDisplay.html(`CORRECT!<br/><br/> ${randomContent[current].explain}`)
           mainDisplay.removeClass('wrong')
           mainDisplay.addClass('right')
+          // Maybe think about abstracting the DOM logic in this function into its own function
           rightCounter++
         } else {
           $(amIRight).addClass('wrong')
@@ -97,6 +100,7 @@ $(document).ready(function () {
       }
     } else {
     }
+    // You don't need an else if it doesn't execute anything
   }
 // Timer function
 
@@ -137,3 +141,5 @@ $(document).ready(function () {
 // Do not delete these braces fool
 }
 )
+
+// Overall, really excellent code formatting, abstraction, semantic-naming, and separation of concerns ++

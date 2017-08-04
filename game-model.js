@@ -8,6 +8,10 @@ var createRandomList = function (list) {
       randomContent.push(randomItem)
     }
   }
+  // Good job creating a function to shuffle the array. However, because you are not removing
+  // each item / index as it is selected, it is not very efficient. Check out this article
+  // on shuffling an array in JS:
+  // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 }
 createRandomList(otterContent)
 
@@ -23,6 +27,7 @@ var formatForDisplay = function () {
     let randAns = wrong.concat(right).sort(() => {
       return 0.5 - Math.random()
     })
+    // You could use your above sorting logic in createRandomList as well
     return {
       question: q,
       answers: randAns,

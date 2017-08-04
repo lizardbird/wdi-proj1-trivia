@@ -19,7 +19,7 @@ Repo containing contents for GA WDI Project 1 - Trivia Game
   <h2>Design &amp; Development</h2>
   <p>I used a <a href="http://www.trello.com/b/1AM2yeDM/ga-wdi-project-1-trivia-game">Trello Board</a> to track my development process, including moving each element from initial design through assigning event listeners to quality testing each piece and ultimately launching the site on GitHub Pages.</p>
   <p>I launched and tested the original game, but I was not loving the boring business spin on the project, and my styling was seriously lacking.</p>
-  
+
   <p>After some reflection, I decided to pivot and change the content to be about one of my favorite animals, Otters, and change to a fun, whimsical theme filled with puns.</p>
   <p>I leveraged the sushi background image from the <a href="http://www.zendesk.com">Zendesk Website</a>, found my Otter logo image on <a href="https://dribbble.com/shots/1202893-Giant-Otter">Dribble</a>, and used <a href="https://coolors.co/">Coolors</a> to generate a complimentary color set. With just a couple hours of CSS editing, the game arrived in it's current state, where I am testing users on Otterly Awesome Facts.</p>
   <h2>Lessons Learned</h2>
@@ -28,3 +28,5 @@ Repo containing contents for GA WDI Project 1 - Trivia Game
   <p><strong>Don't Fall In Love With Your First Idea</strong> - as much as I enjoy business strategy, I did not spend enough time making the content fun and in plain English, so I ended up displeased with the outcome. By letting go of my attachment to this idea, I ultimately freed my mind up to be more creative in other ways.</p>
   <p><strong>Media Queries Are Tricky</strong> - as an avid mobile user, I was adamant on making my game mobile-first. However, my skills in this area are not very strong, and ultimately I am still experiencing some formatting issues when the game is viewed on a screen smaller than 500px wide. I will continue to work on this as I learn more throughout the WDI Program!</p>
 </section>
+
+<!-- Good job writing a descriptive and informative readme. However, consider rewriting it in Markdown and make sure to list the technologies used somewhere. -->

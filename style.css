@@ -263,3 +263,10 @@ footer {
 .currentSize {
   text-decoration: underline;
 }*/
+
+/*Really excellent styling and responsiveness. Only a few notes:
+- Remove commented out / unused code
+- Best practice is to list your css selectors in order of specificity (more general to more specific):
+  - List all general element selectors first
+  - Then list all class selectors
+  - Then list all id selector*/
